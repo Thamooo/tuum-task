@@ -1,6 +1,5 @@
 import { CustomInput } from "./parts/Input";
 import "./../scss/components/Form.scss";
-import { Mail } from "./parts/Mail";
 import { Emails } from "./Emails";
 import { CustomSelect } from "./parts/Select";
 import CountryJSON from "./../db/country.json";
@@ -13,11 +12,11 @@ import { CustomButton } from "./parts/Button";
 const checkboxText1: React.FC = () => (
   <>
     By submitting this form I accept{" "}
-    <a target="_blank" href="https://tuumplatform.com/privacy-policy/">
+    <a target="_blank" rel="noreferrer" href="https://tuumplatform.com/privacy-policy/">
       privacy policy
     </a>{" "}
     and{" "}
-    <a target="_blank" href="https://tuumplatform.com/cookie-policy/">
+    <a target="_blank" rel="noreferrer" href="https://tuumplatform.com/cookie-policy/">
       cookie policy.
     </a>
   </>
