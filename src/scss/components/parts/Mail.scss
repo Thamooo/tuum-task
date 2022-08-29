@@ -1,0 +1,16 @@
+.mail {
+  font-size: 18px;
+  &__title {
+    line-height: 28px;
+    font-size: inherit;
+  }
+  &__link {
+    line-height: 28px;
+    font-size: inherit;
+    text-decoration: none;
+    color: rgba(20, 9, 35, 0.6);
+    &:before {
+      display: none;
+    }
+  }
+}

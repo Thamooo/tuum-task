@@ -1,0 +1,19 @@
+.checkbox {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  align-items: center;
+  input {
+    min-width: 1rem;
+    margin: 0;
+    height: 1rem;
+  }
+  &__text {
+    a {
+      color: rgb(255, 46, 0);
+      &:before {
+        background: rgb(255, 46, 0);
+      }
+    }
+  }
+}

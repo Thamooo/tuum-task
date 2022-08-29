@@ -1,0 +1,18 @@
+@use "./var.scss" as var;
+
+.app {
+  background-color: rgb(167, 208, 216);
+  min-height: 100vh;
+  width: 100%;
+
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding: 6% 32px 9rem 32px;
+    @media (max-width: var.$tablet_bp) {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+}

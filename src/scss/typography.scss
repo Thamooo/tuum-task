@@ -1,0 +1,59 @@
+// Reckless Neue
+// Denim-Regular
+
+@font-face {
+  font-family: "Denim-Regular";
+  src: local("Denim-Regular"), url(./../fonts/Denim-Regular.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "Reckless Neue";
+  src: local("Reckless Neue"), url(./../fonts/RecklessNeue-Light.woff2) format("woff");
+}
+
+* {
+  font-size: 16px;
+  font-family: Denim-Regular, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: rgb(20, 9, 35);
+  box-sizing: border-box;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  &:hover {
+    &:before {
+      width: 0;
+      background: transparent;
+    }
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: rgba(20, 9, 35, 0.6);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+  font-family: Reckless Neue, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+}

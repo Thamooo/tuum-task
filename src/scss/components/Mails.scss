@@ -1,0 +1,17 @@
+@use "./../var.scss" as var;
+
+.mails {
+  padding-top: 8rem;
+  @media (max-width: var.$medium_bp) {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+  & > div {
+    &:not(:first-child) {
+      margin-top: 28px;
+      @media (max-width: var.$tablet_bp) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

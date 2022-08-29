@@ -1,0 +1,37 @@
+@use "./../var.scss" as var;
+
+.form {
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    padding-bottom: 2.5rem;
+    @media (min-width: var.$medium_bp) {
+      font-size: 2.25rem;
+      letter-spacing: -0.02em;
+      line-height: 2.75rem;
+    }
+  }
+  &__holder {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-right: 5rem;
+    @media (max-width: var.$medium_bp) {
+      grid-template-columns: 1fr;
+      padding-right: 0;
+    }
+  }
+  &__fields {
+    &__grid {
+      display: grid;
+      row-gap: 2.25rem;
+      column-gap: 4rem;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: var.$mobile_bp) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  &__end {
+    padding-top: 100px;
+  }
+}

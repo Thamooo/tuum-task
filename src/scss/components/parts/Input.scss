@@ -1,0 +1,14 @@
+.input {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  height: 3rem;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-bottom: 1px solid rgba(20, 9, 35, 0.6);
+
+  &::placeholder {
+    color: rgba(20, 9, 35, 0.6);
+  }
+}
